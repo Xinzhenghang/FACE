@@ -48,12 +48,12 @@ if (!isset($_SESSION['user_login'])) {
 <br>
     <div class="container">
         <div class="row">
-          <div class="col-md-3 float-right">
+          <div class="row-md-10 float-right">
             <div class="list-group">
               <a href="index.php?page=dashboard" class="list-group-item list-group-item-action">
               <i class="fa fa-home" aria-hidden="true"></i> Main Menu
               </a>
-              <a href="index.php?page=all-applicant" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Applicant List</a>
+              
               <a href="index.php?page=all-student" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Preschool Students</a>
               <a href="index.php?page=all-children" class="list-group-item list-group-item-action"><i class="fa fa-users"></i> Nursery Students</a>
               <a href="index.php?page=assessment" class="list-group-item list-group-item-action"><i class="fa fa-book"></i> Assessment</a>

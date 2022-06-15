@@ -70,12 +70,12 @@
       <tr>
         <?php 
         echo '<td>'.$i.'</td>
-          <td>'.ucwords($result['name']).'</td>
+          <td >'.ucwords($result['name']).'</td>
           <td>'.$result['mykid'].'</td>
           <td>'.ucwords($result['address']).'</td>
           <td>'.$result['pcontact'].'</td>
 
-          <td>
+          <td width=100px>
           <a class="btn btn-xs btn-warning" href="index.php?page=applicant-detail&id='.base64_encode($result['id']).'">
           Detail <i class="fa fa-info-circle"></i></a>
 

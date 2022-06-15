@@ -17,34 +17,7 @@ if ($corepage !== 'index.php') {
 </nav>
 
 <div class="row student">
-<div class="col-sm-4">
-    <div class="card text-white bg-info mb-3">
-      <div class="card-header">
-        <div class="row">
-          <div class="col-sm-4">
-            <i class="fa fa-users fa-3x"></i>
-          </div>
-          <div class="col-sm-8">
-            <div class="float-sm-right">&nbsp;<span style="font-size: 30px"><?php $stu = mysqli_query($db_con, 'SELECT * FROM `student_info`');
-                                                                            $stu = mysqli_num_rows($stu);
-                                                                            echo $stu; ?></span></div>
-            <div class="clearfix"></div>
-            <div class="float-sm-right">Applicant List</div>
-          </div>
-        </div>
-      </div>
-      <div class="list-group-item-info list-group-item list-group-item-action">
-        <div class="row">
-          <div class="col-sm-8">
-            <p class="">Total Applicant</p>
-          </div>
-          <div class="col-sm-4">
-            <a href="all-student.php"><i class="fa fa-arrow-right float-sm-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
 
 

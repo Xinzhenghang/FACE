@@ -47,7 +47,7 @@
 		}
 	 ?>
 <div class="row">
-<div class="col-sm-6">
+<div class="col-sm-8">
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Student Name</label>
@@ -55,11 +55,11 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="mykid">MyKid / Passport</label>
-		    <input name="mykid" type="text" class="form-control" pattern="[0-9]{6}" id="mykid" value="<?php echo $row['mykid']; ?>" required="">
+		    <input name="mykid" type="text" class="form-control" pattern="[0-9]{12}" id="mykid" value="<?php echo $row['mykid']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="address">Address</label>
-		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['Address']; ?>" required="">
+		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['Address']; ?>" required="" >
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Contact No</label>
@@ -76,8 +76,14 @@
 
 		    </select>
 	  	</div>
+		  <div class="form-group" >
+		  <button type="button" class="btn btn-light">Assessment 1</button>
+		  <button type="button" class="btn btn-light">Assessment 2</button>
+		  <button type="button" class="btn btn-light">Assessment 3</button>
+		  <button type="button" class="btn btn-light">Assessment 4</button>
+		  </div>
 	  	<div class="form-group text-center">
-		    <input name="updatestudent" value="Update Student" type="submit" class="btn btn-danger">
+		    <input name="updatestudent" value="Update Student" type="submit" class="btn btn-success">
 	  	</div>
 	 </form>
 </div>

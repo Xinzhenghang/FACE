@@ -60,6 +60,9 @@ if (isset($_POST['login'])) {
 	<div class="container"><br>
 		<h1 class="text-center">FACE Student Information</h1>
 		<hr><br>
+		<h3 class="text-center">Staff</h1>
+		
+		<div><br></div>
 		<div class="d-flex justify-content-center">
 			<?php if (isset($usernameerr)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $usernameerr; ?></div><?php }; ?>
 			<?php if (isset($worngpass)) { ?> <div role="alert" aria-live="assertive" aria-atomic="true" align="center" class="toast alert alert-danger fade hide" data-delay="2000"><?php echo $worngpass; ?></div><?php }; ?>
@@ -79,7 +82,7 @@ if (isset($_POST['login'])) {
 						</div>
 						<div class="form-group row">
 						<div class="col-md-5 offset-md-4">
-						<a href="https://www.w3schools.com/">Staff</a>
+						<a href="parentlogin.php">Parent</a>
 					
 						</div>
 					

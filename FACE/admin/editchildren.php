@@ -10,7 +10,7 @@
     
     $id = base64_decode($_GET['id']);
 
-  if (isset($_POST['updatestudent'])) {
+  if (isset($_POST['updatechildren'])) {
   	$name = $_POST['name'];
   	$mykid = $_POST['mykid'];
   	$address = $_POST['address'];
@@ -20,13 +20,13 @@
  
   	
 
-  	$query = "UPDATE `student_info` SET `name`='$name',`mykid`='$mykid',`class`='$class',`address`='$address',`pcontact`='$pcontact' WHERE `id`= $id";
+  	$query = "UPDATE `nursery_info` SET `name`='$name',`mykid`='$mykid',`class`='$class',`address`='$address',`pcontact`='$pcontact' WHERE `id`= $id";
   	if (mysqli_query($db_con,$query)) {
   		$datainsert['insertsucess'] = '<p style="color: green;">Student Updated!</p>';
 		
-  		header('Location: index.php?page=all-student&edit=success');
+  		header('Location: index.php?page=all-children&edit=success');
   	}else{
-  		header('Location: index.php?page=all-student&edit=error');
+  		header('Location: index.php?page=all-children&edit=error');
   	}
   }
 ?>
@@ -41,13 +41,13 @@
 
 	<?php
 		if (isset($id)) {
-			$query = "SELECT `id`, `name`, `mykid`, `class`, `Address`, `pcontact`, `datetime` FROM `student_info` WHERE `id`=$id";
+			$query = "SELECT `id`, `name`, `mykid`, `class`, `Address`, `pcontact`, `datetime` FROM `nursery_info` WHERE `id`=$id";
 			$result = mysqli_query($db_con,$query);
 			$row = mysqli_fetch_array($result);
 		}
 	 ?>
 <div class="row">
-<div class="col-sm-6">
+<div class="col-sm-8">
 	<form enctype="multipart/form-data" method="POST" action="">
 		<div class="form-group">
 		    <label for="name">Student Name</label>
@@ -55,29 +55,36 @@
 	  	</div>
 	  	<div class="form-group">
 		    <label for="mykid">MyKid / Passport</label>
-		    <input name="mykid" type="text" class="form-control" pattern="[0-9]{6}" id="mykid" value="<?php echo $row['mykid']; ?>" required="">
+		    <input name="mykid" type="text" class="form-control" pattern="[0-9]{12}" id="mykid" value="<?php echo $row['mykid']; ?>" required="">
 	  	</div>
-	  	<div class="form-group">
+	  	<div class="form-group height=100">
 		    <label for="address">Address</label>
 		    <input name="address" type="text" class="form-control" id="address" value="<?php echo $row['Address']; ?>" required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="pcontact">Contact No</label>
-		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" pattern="01[5|6|7|8|9][0-9]{8}" placeholder="01........." required="">
+		    <input name="pcontact" type="text" class="form-control" id="pcontact" value="<?php echo $row['pcontact']; ?>" placeholder="01........." required="">
 	  	</div>
 	  	<div class="form-group">
 		    <label for="class">Student Class</label>
 		    <select name="class" class="form-control" id="class" required="" value="">
 		    	<option>Select</option>
 		    	<option value="Arif" <?= $row['class']=='Arif'? 'selected':'' ?>>Arif</option>
-		    	<option value="Bijak" <?= $row['class']=='Bijak'? 'selected':'' ?>>Bijak</option>
-		    	<option value="Pintar" <?= $row['class']=='Pintar'? 'selected':'' ?>>Pintar</option>
-		    	<option value="Cerdik" <?= $row['class']=='Cerdik'? 'selected':'' ?>>Cerdik</option>
-
+		    	<option value="Comel" <?= $row['class']=='Comel'? 'selected':'' ?>>Comel</option>
+		    	<option value="Maju" <?= $row['class']=='Maju'? 'selected':'' ?>>Maju</option>
+		    	<option value="Bestari" <?= $row['class']=='Bestari'? 'selected':'' ?>>Bestari</option>
+				<option value="Cerdas" <?= $row['class']=='Cerdas'? 'selected':'' ?>>Cerdas</option>
+		    	<option value="Ceria" <?= $row['class']=='Ceria'? 'selected':'' ?>>Ceria</option>
 		    </select>
 	  	</div>
+		  <div class="form-group">
+		  <button type="button" class="btn btn-light">Assessment 1</button>
+		  <button type="button" class="btn btn-light">Assessment 2</button>
+		  <button type="button" class="btn btn-light">Assessment 3</button>
+		  <button type="button" class="btn btn-light">Assessment 4</button>
+		  </div>
 	  	<div class="form-group text-center">
-		    <input name="updatestudent" value="Update Student" type="submit" class="btn btn-success">
+		    <input name="updatechildren" value="Update Children" type="submit" class="btn btn-success">
 	  	</div>
 	 </form>
 </div>

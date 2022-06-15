@@ -56,6 +56,7 @@
       <th scope="col">No</th>
       <th scope="col">Name</th>
       <th scope="col">MyKid</th>
+      <th scope="col">Class</th>
       <th scope="col">Address</th>
       <th scope="col">Contact</th>
       <th scope="col">Action</th>
@@ -63,26 +64,27 @@
   </thead>
   <tbody>
     <?php 
-      $query=mysqli_query($db_con,'SELECT * FROM `student_info` ORDER BY `student_info`.`datetime` DESC;');
+      $query=mysqli_query($db_con,'SELECT * FROM `nursery_info` ORDER BY `nursery_info`.`datetime` DESC;');
       $i=1;
       while ($result = mysqli_fetch_array($query)) { ?>
       <tr>
         <?php 
-        echo '<td>'.$i.'</td>
+        echo '<td width=50px>'.$i.'</td>
           <td>'.ucwords($result['name']).'</td>
           <td>'.$result['mykid'].'</td>
+          <td>'.$result['class'].'</td>
           <td>'.ucwords($result['address']).'</td>
           <td>'.$result['pcontact'].'</td>
 
-          <td>
-          <a class="btn btn-xs btn-warning" href="index.php?page=assessment&id='.base64_encode($result['id']).'">
+          <td width=100px>
+          <a class="" href="index.php?page=assessment&id='.base64_encode($result['id']).'">
           <i class="fa fa-book"></i></a>
 
           &nbsp;
-            <a class="btn btn-xs btn-warning" href="index.php?page=editchildren&id='.base64_encode($result['id']).'">
+            <a class="" href="index.php?page=editchildren&id='.base64_encode($result['id']).'">
               <i class="fa fa-edit"></i></a>
 
-             &nbsp; <a class="btn btn-xs btn-danger" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'">
+             &nbsp; <a class="" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'">
              <i class="fas fa-trash-alt"></i></a></td>';?>
       </tr>  
      <?php $i++;} ?>

@@ -51,12 +51,13 @@
     </div>
   </div>
     <?php } ?>
-<table class="table  table-striped table-hover table-bordered" id="data">
+<table class="table  table-striped table-hover table-bordered"    id="data">
   <thead class="thead-dark">
     <tr>
       <th scope="col">No</th>
       <th scope="col">Name</th>
       <th scope="col">MyKid</th>
+      <th scope="col">Class</th>
       <th scope="col">Address</th>
       <th scope="col">Contact</th>
       <th scope="col">Action</th>
@@ -69,32 +70,31 @@
       while ($result = mysqli_fetch_array($query)) { ?>
       <tr>
         <?php 
-        echo '<td>'.$i.'</td>
-          <td>'.ucwords($result['name']).'</td>
+        echo '<td width=50px>'.$i.'</td>
+          <td width=250px>'.ucwords($result['name']).'</td>
           <td>'.$result['mykid'].'</td>
-          <td>'.ucwords($result['address']).'</td>
+          <td>'.$result['class'].'</td>
+          <td width=300px>'.ucwords($result['address']).'</td>
           <td>'.$result['pcontact'].'</td>
 
-          <td>
-          <a class="btn btn-xs btn-warning" href="index.php?page=assessment&id='.base64_encode($result['id']).'">
+          <td width=100px >
+          <a class="" href="index.php?page=assessment&id='.base64_encode($result['id']).'">
           <i class="fa fa-book"></i></a>
 
           &nbsp;
-            <a class="btn btn-xs btn-warning" href="index.php?page=editstudent&id='.base64_encode($result['id']).'">
+            <a class="" href="index.php?page=editstudent&id='.base64_encode($result['id']).'">
               <i class="fa fa-edit"></i></a>
 
-             &nbsp; <a class="btn btn-xs btn-danger" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'">
-             <i class="fas fa-trash-alt"></i></a></td>';?>
+              &nbsp; <a class="" onclick="javascript:confirmationDelete($(this));return false;" href="index.php?page=delete&id='.base64_encode($result['id']).'">
+              <i class="fas fa-trash-alt"></i></a></td>';?>
       </tr>  
      <?php $i++;} ?>
     
   </tbody>
 </table>
 <script type="text/javascript">
-  function confirmationDelete(anchor)
+function ConfirmDelete()
 {
-   var conf = confirm('Are you sure want to delete this record?');
-   if(conf)
-      window.location=anchor.attr("href");
+  return confirm("Are you sure you want to delete?");
 }
 </script>
