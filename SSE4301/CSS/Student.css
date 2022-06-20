@@ -1,0 +1,128 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2022年6月15日, 上午12:09:25
+    Author     : rye
+*/
+
+.Student-infor-top {
+    width: 606px;
+    height: 106px;
+    border-width: 1px;
+    border-style: solid;
+    float: left;
+    position: relative;
+    left: 100px;
+    top: 24px;
+    background-color:  rgb(252, 249, 249);
+}
+
+.Student-infor-top p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 106px;
+    color: black;
+}
+
+.Student-infor-top img {
+    float: left;
+    position: relative;
+    top: 14px;
+    left: 22px;
+}
+
+.stuent-infor-bottom {
+    width: 1100px;
+    height: 797px;
+    border-width: 1px;
+    border-style: solid;
+    float: left;
+    position: relative;
+    left: 100px;
+    top: 30px;
+    background-color:  rgb(252, 249, 249);
+}
+
+.stuent-infor-bottom p {
+    font-size: 30px;
+    color: black;
+    float: left;
+    position: relative;
+    left: 550px;
+    top: 20px;
+}
+
+.stuent-infor-bottom input {
+    width: 410px;
+    height: 54px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-indent: 2em;
+    float: left;
+    position: relative;
+    left: 540px;
+    top: 13px;
+}
+
+.new-direction {
+    width: 400px;
+    height: 85px;
+    font-size: 30px;
+    color: black !important;
+    float: left;
+    position: relative;
+    left: -500px;
+    top: 35px;
+}
+
+.new-direction a {
+    color: rgb(1, 155, 155);
+}
+
+.new-direction a:hover {
+    color: rgb(1, 82, 82);
+    text-decoration: underline;
+}
+
+.table {
+    color: black;
+    font-weight: 300;
+    float: left;
+    position: relative;
+    left: 140px;
+    top: 80px;
+}
+
+.table tr th {
+    margin-left: 20px;
+    text-align: center;
+    border: 1px solid black;
+    height: 50px;
+    font-size: 40px;
+}
+
+.table tr td {
+    border: 1px solid black;
+    height: 100px;
+    font-size: 20px;
+}
+
+.table tr td a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 135px;
+    height: 44px;
+    line-height: 44px;
+    background-color: rgb(217, 217, 217);
+    float: left;
+    margin-left: 20px;
+    border-radius: 10px;
+}

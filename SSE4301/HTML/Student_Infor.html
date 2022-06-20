@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/Base.css" rel="stylesheet" />
+    <link href="../CSS/Assesement.css" rel="stylesheet" />
+    <link href="../CSS/Emoji.css" rel="stylesheet" />
+    <link href="../CSS/Student.css" rel="stylesheet" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script href="../JS/Fobidden.js"></script>
+    <title>Document</title>
+    <title>Register Student Page</title>
+</head>
+
+<body>
+    <header>
+        <h3 class="left-infor">Face Student <br>Information</h3>
+        <h3 class="middle-infor">
+            <css-icon class="icon-person"></css-icon>
+            Welcome
+            <p id="login_infor"></p>
+        </h3>
+        <h3 class="logout">
+            <css-icon class="icon-shutdown"></css-icon>
+            <a href="www.baidu.com">Logout</a>
+        </h3>
+    </header>
+    <div class="box1">
+        <!-- 左侧区域 -->
+        <div class="left-box">
+            <ul>
+                   <!-- 跳转不同功能 -->
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Dashboard.html">Dashboard</a></li>
+                <!-- 横线 -->
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Student_Infor.html">Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/RegisterStudent.html">Register Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Update.html">Update Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Assesement.html">Assesement</a></li>
+
+
+            </ul>
+        </div>
+        <div class="Student-infor-top">
+            <img src="../Image/Student.png" alt="123">
+            <p>Student Information List</p>
+        </div>
+
+        <div class="stuent-infor-bottom">
+            <p>Search</p><input type="name" name="search"><br>
+            <!-- 上层区域（搜索栏） -->
+            <div class="new-direction">
+                <css-icon class="icon-plus"></css-icon>
+                <a href="www.baidu.com">Register New Student</a>
+            </div>
+            <!-- 下层区域展示区域 -->
+            <div class="table">
+                <table>
+                    <!-- 头部区域展示区域 -->
+                    <tr>
+                        <th>Number</th>
+
+                        <th>Name</th>
+
+                        <th>Parent Contact</th>
+
+                        <th>Action</th>
+
+                    </tr>
+                    <!-- 底部区域展示区域 -->
+                    <tr>
+                        <td>12345</td>
+                        <td>qwertyuyuikuiju</td>
+                        <td>1234567890</td>
+                        <td><a href="www.baidu.com">Assess</a>&nbsp&nbsp<a href="www.baidu.com">Assess2</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+</body>
+
+</html>

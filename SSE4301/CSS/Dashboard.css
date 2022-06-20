@@ -1,0 +1,72 @@
+
+
+.dashboard-right{
+    
+    width:890px;
+    
+    height:551px;
+    background-color: rgb(252, 249, 249);
+    
+    float: left;
+    
+    position: absolute;
+    
+    left:400px;
+    
+    margin-top: 65px;
+    
+    margin-left: 130px;
+}
+
+.dashboard-right-top{
+    
+    width:890px;
+    
+    height:97px;
+    
+    
+}
+.dashboard-right-top h4{
+    
+    font-size:20px;
+    
+    text-align: center;
+    
+    line-height: 90px;
+    
+}
+.dashboard-right-bottom{
+    
+      width: auto;
+    float: left;
+    
+    
+}
+.dashboard-right-bottom a{
+    
+    display: block;
+    width: 206px;
+    float: left;
+    margin-left: 84px;
+    margin-top: 31px;   
+    
+}
+.dashboard-right-bottom img{
+    
+    width:130px;
+    
+    height:127px;
+}
+.dashboard-right-bottom p{
+    
+
+    margin-left: 40px;
+   
+   font-size: 20px;
+   
+    color:black;
+    
+   
+    
+}
+

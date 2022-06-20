@@ -1,0 +1,84 @@
+css-icon {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    font-size: 30px;
+    box-sizing: border-box;
+    text-indent: -9999px;
+    vertical-align: middle;
+    position: relative;
+}
+
+css-icon::before,
+css-icon::after {
+    content: '';
+    box-sizing: inherit;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.icon-person::before {
+    width: .45em;
+    height: .45em;
+    border: 2px solid;
+    border-radius: 50%;
+    top: 25%;
+}
+
+.icon-person::after {
+    width: .9em;
+    height: .4em;
+    border: 2px solid;
+    border-radius: 50% 50% 0 0;
+    top: 75%;
+}
+
+.middle-infor {
+    margin-left: 200px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.icon-shutdown::before {
+    height: .5em;
+    border-left: 2px solid;
+    top: .2em;
+}
+
+.icon-shutdown::after {
+    width: .9em;
+    height: .9em;
+    border: 2px solid;
+    border-top-color: transparent;
+    border-radius: 50%;
+}
+
+.icon-back::before {
+    height: .45em;
+    width: .45em;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    color: aliceblue;
+}
+
+.icon-back::after {
+    width: .8em;
+    border-top: 2px solid;
+    left: 55%;
+    color: aliceblue
+}
+
+.icon-plus::before {
+    width: 90%;
+    border-top: 2px solid;
+}
+
+.icon-plus::after {
+    height: 90%;
+    border-left: 2px solid;
+}

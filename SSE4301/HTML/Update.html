@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/Base.css" rel="stylesheet" />
+    <link href="../CSS/Assesement.css" rel="stylesheet" />
+    <link href="../CSS/Emoji.css" rel="stylesheet" />
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Register Student Page</title>
+</head>
+
+<body>
+    <script><!-- comment -->
+    
+  function insert() {
+$.ajax({
+type: "POST",//方法
+url:"../PHP/Update.php" ,//表单接收url
+data:  $('#form1').serialize(),
+success: function () {
+//提交成功的提示词或者其他反馈代码
+var result=document.getElementById("success"); result.innerHTML="成功!";
+},
+error : function() {
+//提交失败的提示词或者其他反馈代码
+var result=document.getElementById("success"); result.innerHTML="失败!";
+}
+});
+}
+    
+</script>
+    <!-- 头部区域 -->
+    <header>E
+        <h3 class="left-infor">Face Student <br>Information</h3>
+        <h3 class="middle-infor">
+            <css-icon class="icon-person"></css-icon>
+            Welcome
+            <p id="login_infor"></p>
+        </h3>
+        <h3 class="logout">
+            <css-icon class="icon-shutdown"></css-icon>
+            <a href="www.baidu.com">Logout</a>
+        </h3>
+    </header>
+    <!-- 内容区域 -->
+    <div class="box1">
+        <!-- 左侧区域 -->
+        <div class="left-box">
+            <ul>
+                  <!-- 跳转不同功能 -->
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Dashboard.html">Dashboard</a></li>
+                <!-- 横线 -->
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Student_Infor.html">Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/RegisterStudent.html">Register Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Update.html">Update Student</a></li>
+                <div class="link-top"></div>
+                <li><a href="http://localhost:4433/PhpProject4/SSE4301/HTML/Assesement.html">Assesement</a></li>
+
+
+            </ul>
+        </div>
+        <!-- 右侧区域 -->
+        <div class="right-box">
+            <!-- 右侧盒子上层区域区域 -->
+            <div class="top-right-box">
+                <button><css-icon class="icon-back"></css-icon></button>
+                <p>Back</p>
+                <img src="../Image/Student.png" alt="123">
+                <h4>Student Registration</h4>
+            </div>
+            <!-- 右侧盒子下层区域区域 -->
+            
+              <div class="bottom-right-box" id="form-div">
+                <form method="post"  action="#" id="form1" onsubmit=return false">
+                    <div class="input-name">
+                        <p>Name</p><input type="text" name="tName"></div><br>
+                    <div class="input-name">
+                        <p>IC NO</p><input type="number" name="IC_NO"></div><br>
+                    <div class="input-name">
+                        <p>Parent</p> <input type="text" name="Parent"></div><br>
+                    <div class="input-name">
+                        <p>Phone</p> <input type="text" name="FirstName"></div><br>
+                    <div class="input-name">
+                        <p>Address</p> <textarea type="text" name="address"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="register" name="ac" onclick="insert()">
+                    <p><div id="success"></div></p>
+                </form>
+
+            </div>
+                 
+             
+        </div>
+</body>
+
+</html>
+

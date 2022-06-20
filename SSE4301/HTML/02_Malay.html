@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../CSS/Base.css" rel="stylesheet" />
+    <link href="../CSS/Assesement.css" rel="stylesheet" />
+    <link href="../CSS/Emoji.css" rel="stylesheet" />
+      <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>Malay Assesement</title>
+</head>
+
+<body >
+    
+    <script>
+
+    
+ function insert() {
+$.ajax({
+type: "POST",//方法
+url:"../PHP/Assessment_Malay.php" ,//表单接收url
+data:  $('#form1').serialize(),
+success: function (data) {
+ alert(data);
+},
+error : function() {
+//提交失败的提示词或者其他反馈代码
+alert("Unsuccessfully Insert");
+}
+});
+}
+
+
+</script>
+
+    <!-- 头部区域 -->
+    <header>
+        <h3 class="left-infor">Face Student <br>Information</h3>
+        <h3 class="middle-infor">
+            <css-icon class="icon-person"></css-icon>
+            Welcome
+            <p id="login_infor"></p>
+        </h3>
+        <h3 class="logout">
+            <css-icon class="icon-shutdown"></css-icon>
+            <a href="www.baidu.com">Logout</a>
+        </h3>
+    </header>
+    <div class="box1">
+          <div class="Assesement_Question">
+
+                <div class="Question_Title">
+                    <img src="../Image/Assesement1.jpg" alt="picture">
+                    <h4>Malay Assesement</h4>
+                </div>
+                <div class="Search_Name">
+                    <form method="post"  action="#" id="form1" onsubmit=return false" >
+                   <h4>Student Name</h4> <input type="text" name="text" id="searchbox1" placeholder="Please Enter Student Name">
+                <h4 class="Title_Of_Down">Assesement&nbsp; Question</h4>
+              <div class="Question">
+                 <textarea placeholder="" id="searchbox" wrap="off" name="Malay"  ></textarea>   
+                    <input type="button" value="Submit" name="ac" onclick="insert()" class="btn-submit">
+              </div>
+                    </form>
+                </div>
+            
+          
+            </div>
+    </div>

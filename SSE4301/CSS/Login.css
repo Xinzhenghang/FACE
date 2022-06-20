@@ -1,0 +1,77 @@
+.top h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 84px;
+    text-align: center;
+}
+
+.inside_box {
+    width: 600px;
+    height: 750px;
+    position: absolute;
+    top: 80px;
+    left: 500px;
+    background-color: aquamarine;
+    border-radius: 60px;
+}
+
+.inside_box h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.inside_box input {
+    margin-top: 40px;
+    margin-left: 30px;
+    width: 480px;
+    height: 64px;
+    border-radius: 10px;
+    text-indent: 2em;
+    position: absolute;
+    left: 30px;
+}
+
+.inside_box input[type="password"] {
+    top: 150px;
+}
+
+.segment a {
+    display: block;
+    float: left;
+    top: 100px;
+    margin-left: 30px;
+}
+
+.segment a:hover {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+.segment p {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 324px;
+    left: 60px;
+}
+
+.segment p1 {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 324px;
+    left: 120px;
+}
+
+.login {
+    width: 122px;
+    height: 60px;
+    background-color: rgb(236, 255, 183);
+    text-align: center;
+    float: left;
+    position: absolute;
+    top: 408px;
+    left: 400px;
+    border-radius: 20px;
+}

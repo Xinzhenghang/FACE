@@ -1,0 +1,491 @@
+h3 {
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    float: left;
+}
+
+header {
+    position: relative;
+    left: 170px;
+    height: 100px;
+    width: 1600px;
+    overflow: hidden;
+    background-color: rgb(168, 162, 162);
+}
+
+header h3 a {
+    color: white;
+}
+
+header h3 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.logout {
+    line-height: 100px;
+    margin-right: 50px;
+    float: right;
+}
+
+.box1 {
+    width: 1600px;
+    height: 1000px;
+    position: relative;
+    left: 170px;
+    background-image: url(../Image/bgimg.jpg);
+
+ 
+}
+
+.left-box {
+    float: left;
+    background-color: white;
+    width: 294px;
+    height: 280px;
+    color: black;
+    margin-top: 99px;
+    margin-left: 35px;
+    border-radius: 10px;
+}
+
+.left-box ul li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 55px;
+    margin-right: 10px;
+}
+
+.left-box ul li a:hover {
+    color: white;
+    background-color: black;
+}
+
+.right-box {
+    float: left;
+    margin-left: 180px;
+    background-color: rgb(252, 249, 249);
+    width: 1003px;
+    height: 750px;
+    margin-top: 70px;
+}
+
+.link-top {
+    width: 276px;
+    height: 1px;
+    border-top: solid #ACC0D8 1px;
+    margin-left: 10px;
+}
+
+.top-right-box {
+    width: 958px;
+    height: 85px;
+    margin-left: 20px;
+}
+
+.top-right-box button {
+    width: 38px;
+    height: 38px;
+    background-color: black;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+.top-right-box p {
+    font-size: 30px;
+    color: black;
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+
+.top-right-box h4 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 85px;
+    color: black;
+}
+
+.top-right-box img {
+    float: left;
+    position: relative;
+    left: 200px;
+}
+
+.input-name {
+    width: 800px;
+    height: 52px;
+    margin-left: 90px;
+    margin-top: 27px;
+}
+
+.input-name p {
+    font-size: 30px;
+    color: black;
+    float: left;
+}
+
+.input-name input {
+    width: 650px;
+    height: 54px;
+    background-color: white;
+    margin-left: 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-indent: 2em;
+    
+ 
+}
+
+.input-name textarea {
+    width: 650px;
+    height: 150px;
+    border-radius: 10px;
+    text-indent: 2em;
+}
+
+.register {
+    width: 121px;
+    height: 39px;
+    background-color: red;
+    float: right;
+    position: relative;
+    top: 140px;
+    right: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* 点击Assesement获取 */
+
+.AS_right {
+    width: 1100px;
+    height: 703px;
+    background-color: rgb(252, 249, 249);
+    float: left;
+    position: relative;
+    margin-left: 370px;
+    top: -284px;
+}
+
+.upper_layer {
+    width: 450px;
+    height: 106px;
+    float: left;
+    margin-left:350px;
+}
+
+.upper_layer img {
+    width: 116px;
+    height: 117px;
+    margin-top: 30px;
+    margin-bottom: 9px;
+    float: left;
+}
+
+.upper_layer h4 {
+    font-size: 30px;
+    font-weight: normal;
+    float: left;
+    line-height: 168px;
+    text-align: center;
+}
+
+.search-border {
+    width: 800px;
+    height: 106px;
+    float: left;
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.search-border h4 {
+    font-size: 30px;
+    font-weight: normal;
+    float: left;
+    line-height: 106px;
+    text-align: center;
+    color:black;
+}
+
+.search-border input[type=text] {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 480px;
+    height: 64px;
+    border-radius: 10px;
+    text-indent: 2em;
+      border:1px solid black;
+}
+
+.display-dashboad {
+    width: auto;
+    float: left;
+}
+
+.display-dashboad a {
+    display: block;
+    width: 206px;
+    height: 301px;
+    float: left;
+    margin-left: 57px;
+    margin-top: 60px;
+}
+
+.display-dashboad a p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.Assesement_Question{
+    
+     width: 1300px;
+    height: 1003px;
+    background-color: rgb(252, 249, 249);
+    float: left;
+    position: relative;
+  
+    left: 154px;
+  
+}
+.Question_Title{
+    
+    width: 450px;
+    height: 106px;
+    float: left;
+    margin-left: 450px;
+}
+
+.Question_Title img {
+    width: 116px;
+    height: 117px;
+    margin-top: 30px;
+    margin-bottom: 9px;
+    float: left;
+}
+
+.Question_Title h4 {
+    font-size: 27px;
+    font-weight: normal;
+    float: left;
+    line-height: 168px;
+    text-align: center;
+    color: black;
+}
+
+.search-border {
+    width: 800px;
+    height: 106px;
+    float: left;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.Search_Name{
+    
+    width: 1000px;
+    height: 106px;
+    float: left;
+    margin-left: 180px;
+    margin-top: 40px;
+    
+}
+
+
+.Search_Name h4 {
+    font-size: 30px;
+    font-weight: normal;
+    float: left;
+    line-height: 106px;
+    text-align: center;
+    color:black;
+}
+
+.Search_Name input {
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 700px;
+    height: 44px;
+    border-radius: 10px;
+    text-indent: 2em;
+    border:1px solid black;
+}
+.Question{
+    
+     width: 1000px;
+    height: 600px;
+    float: left;
+     position: absolute;
+     
+     top:300px;
+     
+     left:200px;
+     
+     background-color: pink;
+}
+
+
+.Question textarea{
+    
+    width: 1000px;
+    height: 600px;
+    
+     text-indent: 2em;
+    font-size:50px;
+}
+
+textarea::-webkit-input-placeholder{
+    
+    text-align: center;
+    
+    font-size:50px;
+    
+}
+.Title_Of_Down{
+    
+    
+    font-size: 30px;
+    font-weight: normal;
+    float: left;
+    text-align: center;
+    color:black;
+    position: absolute;
+    
+    top:210px;
+    
+    left:550px;
+    
+}
+
+ input[type=button] { /*默认状态下样式*/
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background: red;
+}
+.Question .btn-submit{
+    
+    width: 121px;
+    height: 39px;
+    background-color: red;
+    float: right;
+    position: relative;
+    top:40px;
+    right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    z-index: 999;
+}
+.display_Infor{
+    
+    
+    width:1150px;
+    
+    height:490px;
+    
+    float: left;
+    
+    position: absolute;
+    
+ 
+    
+    top:280px;
+    
+    left:80px;
+}
+
+ table {
+   
+    
+      width:900px;
+      
+      height: 800px;
+    
+       border: 1px solid black;
+       
+       margin-left: 100px;
+       
+       
+       text-align: center;
+       
+       color:black;
+       
+       text-align: center;
+       
+       font-size:25px;
+       
+    
+}
+
+tr{
+    
+     float:left;
+}
+th{
+    
+     display: block;
+     
+    text-align: center;
+    
+     border: 1px solid black;
+     
+         height: 100px;
+         
+         width:200px;
+         
+           line-height: 100px;
+         
+         float:left;
+    
+}
+td {
+    
+    margin-top: 100px;
+    border: 1px solid black;
+    
+    height:100px;
+    
+    display: block;
+    
+    
+}
+
+/*.display_Infor table tr th{
+    
+    color:black;
+    
+    font-size:40px;
+    
+   float:left;
+    
+    margin-left: 279px;
+    
+}
+
+.display_Infor table td{
+    
+     display: block;
+    
+    color:black;
+    
+    font-size:30px;
+    
+  
+    
+    margin-left: 320px;
+    
+    
+    
+}*/
